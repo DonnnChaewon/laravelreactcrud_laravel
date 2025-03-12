@@ -20,13 +20,13 @@ class TopicStoreRequest extends FormRequest {
             return [
                 'title' => 'required|string',
                 'description' => 'required|string',
-                'image' => 'required|image|mimes:jpeg,jpg,png|max:2048'
+                'image' => 'required|image|mimes:jpeg,jpg,png|max:5120'
             ];
         } else {
             return [
                 'title' => 'required|string',
                 'description' => 'required|string',
-                'image' => 'nullable|image|mimes:jpeg,jpg,png|max:2048'
+                'image' => 'nullable|image|mimes:jpeg,jpg,png|max:5120'
             ];
         }
     }
