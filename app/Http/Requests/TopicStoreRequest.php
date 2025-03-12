@@ -19,13 +19,13 @@ class TopicStoreRequest extends FormRequest {
         if(request()->isMethod('post')) {
             return [
                 'title' => 'required|string',
-                'description' => 'required|string',
+                'description' => 'required',
                 'image' => 'required|image|mimes:jpeg,jpg,png|max:5120'
             ];
         } else {
             return [
                 'title' => 'required|string',
-                'description' => 'required|string',
+                'description' => 'required',
                 'image' => 'nullable|image|mimes:jpeg,jpg,png|max:5120'
             ];
         }
