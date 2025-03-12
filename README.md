@@ -3,8 +3,8 @@
 - Open this project at Visual Studio Code, new terminal and type ```php artisan serve```, and CTRL + click the link.
 - Create database with the name **laravelreactcrud_copy**.
 - Type php artisan migrate in the new terminal to create tables in the database.
-New tab in your browser and type ```http://localhost:8000/api/topics``` to access list of datas in JSON form.
-After you deleted a data and want to add a new data afterwards, remember to auto increment the index.
+- New tab in your browser and type ```http://localhost:8000/api/topics``` to access list of datas in JSON form.
+- After you deleted a data and want to add a new data afterwards, remember to auto increment the index.
 ```
 SELECT @max_value := MAX(id) FROM topics;
 
